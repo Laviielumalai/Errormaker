@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1> Student CRUD Application</h1>
+    </header>
+    <main>
+        <section id="create">
+            <h2>Create</h2>
+            <!-- Form to create a new record -->
+            <form id="createForm">
+                <!-- Input fields for creating a new record -->
+                <input type="number" id="Id" id="Id" placeholder="Id" required> 
+                 <input type="text" id="name" name="name" placeholder="Name" required> 
+                <input type="text" id="address" name="address" placeholder="address" required> 
+                <input type="text" id="mobile" nam="mobile" placeholder="mobile"
+                <!-- Add more fields as needed -->
+                <button type="submit">Create</button>
+            </form>
+        </section>
+
+        <section id="read">
+            <h2>Read</h2>
+            <!-- Table to display existing records -->
+            <table>
+                <thead>
+                    <tr>
+                        <!-- Table headers for your data -->
+                        <th>Id</th>
+                        <th>Name</th> 
+                         <th>Address</th> 
+                         <th>Mobile</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Use JavaScript to populate table rows with data from your backend -->
+                             <tr>
+                                    <td>1</td>
+                                    <td>John Doe</td>
+                                    <td>india</td>
+                                    <td>1234567899</td>
+                                    <td>
+                                        <button>Edit</button>
+                                        <button>Delete</button>
+                                    </td>
+                                </tr> 
+                </tbody>
+            </table>
+        </section>
+
+        <section id="update">
+            <h2>Update</h2>
+            <!-- Form to update an existing record -->
+            <form id="updateForm">
+                <!-- Input fields for updating a record -->
+                <input type="number" id="updateId" id="updateId" placeholder="Id" required>
+                 <input type="text" id="updateName" name="updateName" placeholder="Name" required> 
+                 <input type="text" id="updateaddress" address="updateaddress" placeholder="address" required> 
+                 
+                 <input type="text" id="updatemobile" mobile="updatemobile" placeholder="mobile" required>
+                <!-- Add more fields as needed -->
+                <button type="submit">Update</button>
+            </form>
+        </section>
+
+        <section id="delete">
+            <h2>Delete</h2>
+            <!-- Form to delete an existing record -->
+            <form id="deleteForm">
+                <!-- Input field for record ID -->
+                 <input type="number" id="deleteId" name="deleteId" placeholder="Record ID" required> 
+                <button type="submit">Delete</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Student Record</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
