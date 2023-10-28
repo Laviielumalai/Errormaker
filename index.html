@@ -3,86 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD Application</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spicy Hut - Restaurant</title>
 </head>
 <body>
-    <header>
-        <h1> Student CRUD Application</h1>
-    </header>
-    <main>
-        <section id="create">
-            <h2>Create</h2>
-            <!-- Form to create a new record -->
-            <form id="createForm">
-                <!-- Input fields for creating a new record -->
-                <input type="number" id="Id" id="Id" placeholder="Id" required> 
-                 <input type="text" id="name" name="name" placeholder="Name" required> 
-                <input type="text" id="address" name="address" placeholder="address" required> 
-                <input type="text" id="mobile" nam="mobile" placeholder="mobile"
-                <!-- Add more fields as needed -->
-                <button type="submit">Create</button>
-            </form>
-        </section>
-
-        <section id="read">
-            <h2>Read</h2>
-            <!-- Table to display existing records -->
+    <div class="landing">
+        <header>
+            <a href="index.html" id="logo">Spicy Hut</a>
+          <!----  <nav>
+                <a href="">Menu</a>
+                <a href="">Locations</a>
+            </nav>-->
+             <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Locations</a></li>
+            <!--<li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>-->
+        </ul>
+    </div>
+        </header>
+     <div Class="maintext">
+        <div Class="tagline1">
+            Finest Treat For Your Taste Buds
+        </div>
+        <div Class="tagline2">
+            Freshest Ingredients Guranteed
+        </div>
+        <div Class="callus">
+            Call us @+91 1234567890
+        </div>
+        <button>Order Online</button>
+    
+    </div>
+    </div>
+    
+    <h2 id="menuheading">Menu</h2>
+    <div class="menu">
+        <div class="starters">
+          <table>
+            <th tolspan="2">starters</th>
+            <tr>
+                <td>paneer tikka</td>
+                <td>&#8377 165</td>
+            </tr>
+            <tr>
+                <td>Gobi 65</td>
+                <td>&#8377 165</td>
+            </tr>
+            <tr>
+                <td>Veg pakoda</td>
+                <td>&#8377 160</td>
+            </tr>
+            <tr>
+                <td>Mirchi Bajji</td>
+                <td>&#8377 158</td>
+            </tr>
+          </table>  
+        </div>
+        <div class="Main course">
             <table>
-                <thead>
-                    <tr>
-                        <!-- Table headers for your data -->
-                        <th>Id</th>
-                        <th>Name</th> 
-                         <th>Address</th> 
-                         <th>Mobile</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Use JavaScript to populate table rows with data from your backend -->
-                             <tr>
-                                    <td>1</td>
-                                    <td>John Doe</td>
-                                    <td>india</td>
-                                    <td>1234567899</td>
-                                    <td>
-                                        <button>Edit</button>
-                                        <button>Delete</button>
-                                    </td>
-                                </tr> 
-                </tbody>
+                <th colspan="2">Main course</th>
+                <tr>
+                    <td>veg fried rice</td>
+                    <td>&#8377 340</td>
+                </tr>
+                <tr>
+                    <td>Schezwan fried rice</td>
+                    <td>&#8377 168</td>
+                </tr>
+                <tr>
+                    <td>Veg Biriyani</td>
+                    <td>&#8377 370</td>
+                </tr>
+                <tr>
+                    <td>Paneer Biriyani</td>
+                    <td>&#8377 390</td>
+                </tr>
+                <tr>
+                    <td>Mushroom Biriyani</td>
+                    <td>&#8377 400</td>
+                </tr>
+                <tr>
+                    <td>Veg Noodels</td>
+                    <td>&#8377 350</td>
+                </tr>
+                <tr>
+                    <td>Veg pulav</td>
+                    <td>&#8377 380</td>
+                </tr>
             </table>
-        </section>
+        </div>
+        <div class="chats">
+            <table>
+                <th colspan="2">Chats</th>
+                <tr>
+                    <td>Samosa</td>
+                    <td>&#8377 120</td>
 
-        <section id="update">
-            <h2>Update</h2>
-            <!-- Form to update an existing record -->
-            <form id="updateForm">
-                <!-- Input fields for updating a record -->
-                <input type="number" id="updateId" id="updateId" placeholder="Id" required>
-                 <input type="text" id="updateName" name="updateName" placeholder="Name" required> 
-                 <input type="text" id="updateaddress" address="updateaddress" placeholder="address" required> 
-                 
-                 <input type="text" id="updatemobile" mobile="updatemobile" placeholder="mobile" required>
-                <!-- Add more fields as needed -->
-                <button type="submit">Update</button>
-            </form>
-        </section>
-
-        <section id="delete">
-            <h2>Delete</h2>
-            <!-- Form to delete an existing record -->
-            <form id="deleteForm">
-                <!-- Input field for record ID -->
-                 <input type="number" id="deleteId" name="deleteId" placeholder="Record ID" required> 
-                <button type="submit">Delete</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Your Student Record</p>
-    </footer>
-    <script src="script.js"></script>
+                </tr>
+                <tr>
+                    <td>Pani poori</td>
+                    <td>&#8377 130</td>
+                </tr>
+                <tr>
+                    <td>Masala poori</td>
+                    <td>&#8377 140</td>
+                </tr>
+                <tr>
+                    <td>Pav Baaji</td>
+                    <td>&#8377 150</td>
+                </tr>
+                <tr>
+                    <td>Bhel puri</td>
+                    <td>&#8377 123</td>
+                </tr>
+                <tr>
+                    <td>Vada pav</td>
+                    <td>&#8377 155</td>
+                </tr>
+                <tr>
+                    <td>Raj Kachori</td>
+                    <td>&#8377 145</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <h2 id="locheading">Locations</h2>
+             <div class="locations">
+                <div class="annanagar">
+                    <h2>Anna Nagar</h2>
+                    <address>
+                        15, 10th Main Road,</br>
+                        Anna Nagar,</br>
+                        Chennai - 600102
+                    </address>
+                </div>
+                <div class="velachery">
+                    <h2>velachery</h2>
+                    <address>
+                        5, 3rd cross Road,</br>
+                        vijaya Nagar,</br>
+                        Velachery,</br>
+                        Chennai - 600042
+                    </address>
+                </div>
+            </div>
+            <footer>
+                <div id="copyright">&#169 copyright spicy Hut</div>
+            </footer>
+    
 </body>
 </html>
